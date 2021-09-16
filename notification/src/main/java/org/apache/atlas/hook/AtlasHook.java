@@ -198,19 +198,7 @@ public abstract class AtlasHook {
             }
 
             try {
-                if (ugi == null) {
-                    notificationInterface.send(NotificationInterface.NotificationType.HOOK, messages);
-                } else {
-                    PrivilegedExceptionAction<Object> privilegedNotify = new PrivilegedExceptionAction<Object>() {
-                        @Override
-                        public Object run() throws Exception {
-                            notificationInterface.send(NotificationInterface.NotificationType.HOOK, messages);
-                            return messages;
-                        }
-                    };
-
-                    ugi.doAs(privilegedNotify);
-                }
+                notificationInterface.send(NotificationInterface.NotificationType.HOOK, messages);
 
                 notificationFailure = null; // notification sent successfully, reset error
 
