@@ -1372,14 +1372,6 @@
 
             <dependency>
                 <groupId>org.apache.atlas</groupId>
-                <artifactId>atlas-intg</artifactId>
-                <version>${project.version}</version>
-                <classifier>tests</classifier>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.atlas</groupId>
                 <artifactId>atlas-graphdb-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
