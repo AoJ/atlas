@@ -256,14 +256,6 @@
             <artifactId>testng</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.atlas</groupId>
-            <artifactId>atlas-graphdb-common</artifactId>
-            <version>${project.version}</version>
-            <classifier>tests</classifier>
-            <scope>test</scope>
-        </dependency>
-
 	<dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
